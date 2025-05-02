@@ -15,9 +15,9 @@
   npm update
 ```
 4. Config FHIR endpoint
-  - go to `HealthFHIR/script/fhir-config.js`
-  - replace URL with your FHIR endpoint
-4. start server
+    - go to `HealthFHIR/script/fhir-config.js`
+    - replace URL with your FHIR endpoint
+5. start server
 ```bash
   npm start
 ```
