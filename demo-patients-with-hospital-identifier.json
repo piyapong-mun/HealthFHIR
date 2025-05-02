@@ -1,0 +1,522 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "total": 16,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient001"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Nicholas Joseph Fury",
+            "family": "Fury",
+            "given": [
+              "Nicholas",
+              "Joseph"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Nick Fury",
+            "family": "Fury",
+            "given": [
+              "Nick"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1950-07-04"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient002"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Maria Hill",
+            "family": "Hill",
+            "given": [
+              "Maria"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1982-04-04"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient003"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Phillip J. Coulson",
+            "family": "Coulson",
+            "given": [
+              "Phillip",
+              "J."
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Phil Coulson",
+            "family": "Coulson",
+            "given": [
+              "Phil"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1964-07-08",
+        "deceasedBoolean": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient004"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Steven Grant Rogers",
+            "family": "Rogers",
+            "given": [
+              "Steven",
+              "Grant"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Steve Rogers",
+            "family": "Rogers",
+            "given": [
+              "Steve"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1918-07-04"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient005"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Felix Blake",
+            "family": "Blake",
+            "given": [
+              "Felix"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1961-03-12"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Anne Weaver",
+            "family": "Weaver",
+            "given": [
+              "Anne"
+            ]
+          }
+        ],
+        "gender": "female",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient006"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Roberto Gonzales",
+            "family": "Gonzales",
+            "given": [
+              "Roberto"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Robert Gonzales",
+            "family": "Gonzales",
+            "given": [
+              "Robert"
+            ]
+          }
+        ],
+        "gender": "male",
+        "deceasedDateTime": "2015-05-08",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient007"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Clinton Francis Barton",
+            "family": "Barton",
+            "given": [
+              "Clinton",
+              "Francis"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Clint Barton",
+            "family": "Barton",
+            "given": [
+              "Clint"
+            ]
+          }
+        ],
+        "gender": "male",
+        "identifier": [
+          {
+            "system": "http://hospitalA.org/",
+            "value": "Patient008"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Tom\u00e1s Calderon",
+            "family": "Calderon",
+            "given": [
+              "Tom\u00e1s"
+            ]
+          }
+        ],
+        "gender": "male",
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient009"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Sharon Carter",
+            "family": "Carter",
+            "given": [
+              "Sharon"
+            ]
+          }
+        ],
+        "gender": "female",
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient010"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Isabelle Hartley",
+            "family": "Hartley",
+            "given": [
+              "Isabelle"
+            ]
+          },
+          {
+            "use": "nickname",
+            "text": "Izzy",
+            "given": [
+              "Izzy"
+            ]
+          }
+        ],
+        "gender": "female",
+        "deceasedBoolean": true,
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient011"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient012"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Melinda Qiaolian May",
+            "family": "May",
+            "given": [
+              "Melinda",
+              "Qiaolian"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Melinda May",
+            "family": "Melinda",
+            "given": [
+              "May"
+            ]
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Barbara Morse",
+            "family": "Morse",
+            "given": [
+              "Barbara"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Bobbi Morse",
+            "family": "Morse",
+            "given": [
+              "Bobbi"
+            ]
+          }
+        ],
+        "gender": "female",
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient013"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Natalia Alianovna Romanoff",
+            "family": "Romanoff",
+            "given": [
+              "Natalia",
+              "Alianovna"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Natasha Romanoff",
+            "family": "Romanoff",
+            "given": [
+              "Natasha"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1984",
+        "deceasedBoolean": true,
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient014"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Anthony Edward Stark",
+            "family": "Stark",
+            "given": [
+              "Anthony",
+              "Edward"
+            ]
+          },
+          {
+            "use": "usual",
+            "text": "Tony Stark",
+            "family": "Stark",
+            "given": [
+              "Tony"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1970-05-29",
+        "deceasedBoolean": true,
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient015"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "text": "Antoine Triplett",
+            "family": "Triplett",
+            "given": [
+              "Antoine"
+            ]
+          }
+        ],
+        "gender": "male",
+        "deceasedBoolean": true,
+        "identifier": [
+          {
+            "system": "http://hospitalB.org/",
+            "value": "Patient016"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    }
+  ]
+}

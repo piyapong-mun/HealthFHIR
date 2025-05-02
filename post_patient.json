@@ -1,0 +1,30 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+      {
+        "system": "http://hospitalA.org/",
+        "value": "Patient01111"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "text": "Nicholas Joseph Fury",
+        "family": "Fury",
+        "given": [
+          "Nicholas",
+          "Joseph"
+        ]
+      },
+      {
+        "use": "usual",
+        "text": "Nick Fury",
+        "family": "Fury",
+        "given": [
+          "Nick"
+        ]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1950-07-04"
+}

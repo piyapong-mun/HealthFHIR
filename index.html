@@ -103,10 +103,29 @@
         </form>
     </div>
 
-
-
     <h2>Result</h2>
-    <div id="result" class="result-box"></div>
+    <div id="result" class="result-box" style="display: none;"></div>
+
+    <!-- Add a new section for displaying the patient list -->
+    <div id="patient-list" class="patient-list" style="display: none;">
+        <h3>Search Results</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birth Date</th>
+                    <th>Gender</th>
+                    <th>Hospital URL</th>
+                    <th>Hospital Value</th>
+                </tr>
+            </thead>
+            <tbody id="patient-list-body">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="./script/fhir-config.js"></script>
