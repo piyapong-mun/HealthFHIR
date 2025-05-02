@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FHIR Patient Manager</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <h1>FHIR Patient Manager</h1>
+
+    <div class="button-container">
+        <button type="button" onclick="showAddForm()" id="show-add-form" class="action-button">Add Patient</button>
+        <button type="button" onclick="showUpdateForm()" id="show-update-form" class="action-button">Update
+            Patient</button>
+        <button type="button" onclick="showGetForm()" id="show-get-form" class="action-button">Get Patient</button>
+    </div>
+
+    <div id="add-form-div" class="form-section" style="display: none;">
+        <!-- ADD PATIENT FORM -->
+        <h2>Add Patient</h2>
+        <form id="add-form">
+            <label>First Name:</label><br>
+            <input type="text" id="add-first-name" required><br><br>
+
+            <label>Last Name:</label><br>
+            <input type="text" id="add-last-name" required><br><br>
+
+            <label>Gender:</label><br>
+            <select id="add-gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="unknown">Unknown</option>
+            </select><br><br>
+
+            <label>Birth Date:</label><br>
+            <input type="date" id="add-birth-date" required><br><br>
+
+            <button type="submit">Add Patient</button>
+        </form>
+    </div>
+
+    <div id="update-form-div" class="form-section" style="display: none;">
+        <!-- UPDATE PATIENT FORM -->
+        <h2>Update Patient</h2>
+        <form id="update-form">
+            <label>Patient ID:</label><br>
+            <input type="text" id="update-id" required><br><br>
+
+            <label>First Name:</label><br>
+            <input type="text" id="update-first-name" required><br><br>
+
+            <label>Last Name:</label><br>
+            <input type="text" id="update-last-name" required><br><br>
+
+            <label>Gender:</label><br>
+            <select id="update-gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="unknown">Unknown</option>
+            </select><br><br>
+
+            <label>Birth Date:</label><br>
+            <input type="date" id="update-birth-date" required><br><br>
+
+            <button type="submit">Update Patient</button>
+        </form>
+    </div>
+
+    <div id="get-form-div" class="form-section" style="display: none;">
+        <!-- GET PATIENT FORM -->
+        <h2>Get Patient</h2>
+
+        <h4>Search By:</h4>
+        <select id="get-search-type" onchange="handleSelectChange()">
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+        </select><br><br>
+        <form id="get-form">
+
+            <div id="get-id-section" style="display: block;">
+                <label>Patient ID:</label><br>
+                <input type="text" id="get-patient-id" placeholder="Enter ID"><br><br>
+
+                <label>Version ID:</label><br>
+                <input type="text" id="get-patient-version-id" placeholder="Enter Version ID"><br><br>
+            </div>
+
+            <div id="get-name-section" style="display: none;">
+                <label>First Name:</label><br>
+                <input type="text" id="get-first-name" placeholder="Enter First Name"><br><br>
+
+                <label>Last Name:</label><br>
+                <input type="text" id="get-last-name" placeholder="Enter Last Name"><br><br>
+            </div>
+
+            <button type="submit">Get Patient</button>
+        </form>
+    </div>
+
+
+
+    <h2>Result</h2>
+    <div id="result" class="result-box"></div>
+
+    <!-- SCRIPTS -->
+    <script src="./script/fhir-config.js"></script>
+    <script src="./script/fhir-utils.js"></script>
+    <script src="./script/fhir-add.js"></script>
+    <script src="./script/fhir-update.js"></script>
+    <script src="./script/fhir-get.js"></script>
+    <script src="./script/handle-from.js"></script>
+</body>
+
+</html>
