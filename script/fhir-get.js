@@ -12,17 +12,6 @@ document.getElementById('get-form').addEventListener('submit', async (e) => {
     // }
   
     let url = `${fhirServer}/Patient`;
-  
-    // Construct the query based on name inputs
-    // if (id) {
-    //     url += `id=${id}&`;
-    // }
-    // if (firstName) {
-    //   url += `given=${firstName}&`;
-    // }
-    // if (lastName) {
-    //   url += `family=${lastName}&`;
-    // }
     
     if (id) {
         url += `/${id}`;

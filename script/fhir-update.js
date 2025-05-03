@@ -7,6 +7,12 @@ document.getElementById('update-form').addEventListener('submit', async (e) => {
     const patient = {
       resourceType: 'Patient',
       id: id,
+      identifier: [
+        {
+          system: document.getElementById('update-hospital-url').value,
+          value: document.getElementById('update-HN').value
+        }
+      ],
       name: [{
         use: 'official',
         family: document.getElementById('update-last-name').value,
@@ -17,6 +23,7 @@ document.getElementById('update-form').addEventListener('submit', async (e) => {
     };
   
     try {
+      console.log(JSON.stringify(patient));
       const response = await fetch(`${fhirServer}/Patient/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/fhir+json' },

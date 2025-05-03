@@ -4,11 +4,7 @@ function displayResult(data) {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = ''; // Clear old content
 
-    // if (!data.entry || data.entry.length === 0) {
-    //   resultDiv.innerHTML = `<div>No patients found matching your criteria.</div>`;
-    // } else if (Array.isArray(data.entry)) {
-
-    if (data.entry && Array.isArray(data.entry) && data.entry.length > 1) {
+    if (data.entry && Array.isArray(data.entry) && data.entry.length >= 1) {
         // Multiple patients found
         data.entry.forEach(patientEntry => {
             const patient = patientEntry.resource;
@@ -18,12 +14,16 @@ function displayResult(data) {
             const birthDate = patient.birthDate || 'N/A';
             const id = patient.id || 'N/A';
             const versionId = patient.meta?.versionId || 'N/A';
+            const hospitalUrl = patient.identifier?.[0]?.system || 'N/A';
+            const HN = patient.identifier?.[0]?.value || 'N/A';
 
             resultDiv.innerHTML += `
           <div><strong>Patient ID:</strong> ${id}</div>
           <div><strong>Name:</strong> ${fullName}</div>
           <div><strong>Gender:</strong> ${gender}</div>
           <div><strong>Birth Date:</strong> ${birthDate}</div>
+          <div><strong>Hospital:</strong> ${hospitalUrl}</div>
+          <div><strong>HN:</strong> ${HN}</div>
           <div><strong>History ID:</strong> ${versionId}</div>
           <hr />
         `;
@@ -36,12 +36,18 @@ function displayResult(data) {
         const birthDate = data.birthDate || 'N/A';
         const id = data.id || 'N/A';
         const versionId = data.meta?.versionId || 'N/A';
+        // console.log(data);
+        const hospitalUrl = data.identifier?.[0]?.system || 'N/A';
+        const HN = data.identifier?.[0]?.value || 'N/A';
+
 
         resultDiv.innerHTML = `
         <div><strong>Patient ID:</strong> ${id}</div>
         <div><strong>Name:</strong> ${fullName}</div>
         <div><strong>Gender:</strong> ${gender}</div>
         <div><strong>Birth Date:</strong> ${birthDate}</div>
+        <div><strong>Hospital:</strong> ${hospitalUrl}</div>
+        <div><strong>HN:</strong> ${HN}</div>
         <div><strong>History ID:</strong> ${versionId}</div>
         <hr />
       `;

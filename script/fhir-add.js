@@ -3,6 +3,12 @@ document.getElementById('add-form').addEventListener('submit', async (e) => {
   
     const patient = {
       resourceType: 'Patient',
+      identifier: [
+        {
+          system: document.getElementById('add-hospital-url').value,
+          value: document.getElementById('add-HN').value
+        }
+      ],
       name: [{
         use: 'official',
         family: document.getElementById('add-last-name').value,
